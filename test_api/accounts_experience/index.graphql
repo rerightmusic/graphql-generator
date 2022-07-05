@@ -1,0 +1,16 @@
+# import "../accounts/index.graphql"
+# import "../core/index.graphql"
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  getAccount(id: AccountId): Account
+  searchAccounts(searchQuery: SearchQuery!): [Account!]!
+}
+
+type Mutation {
+  createAccount(email: Email!, pass: String!): AccountId!
+}

@@ -1,0 +1,9 @@
+# import "../core/index.graphql"
+
+type Account {
+  id: AccountId!
+  email: Email!
+  pass: String!
+}
+
+scalar AccountId

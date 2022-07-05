@@ -1,0 +1,6 @@
+input SearchQuery {
+  keywords: String!
+  orderBy: String!
+}
+
+scalar Email
