@@ -149,7 +149,7 @@ export const gen = (sbtRoot: string, toGen: ScalaConfig[], verbose?: boolean) =>
   }
   const pr = spawn(`sbt \"${toGen_.map(x => x.cmd).join(';')}\"`, {
     cwd: sbtRoot,
-    shell: true,
+    shell: 'bash',
     stdio: 'inherit',
   });
 
